@@ -76,6 +76,7 @@ Engineering students (primary), lab in-charge (secondary/admin).
 ## 2.3 Observation Log
 
 | Observation | Evidence | Pain Point |
+| ----------- | -------- | ---------- |
 | Students forget to return components after use | Components found missing during next session | Component loss and replacement cost |
 | Lab in-charge unaware of who took which component | No real-time tracking exists | Accountability gap |
 | Components mixed or misplaced across storage | Time wasted searching before practicals | Inefficiency and lab disruption |
