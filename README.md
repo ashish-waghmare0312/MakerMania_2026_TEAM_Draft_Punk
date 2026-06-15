@@ -64,6 +64,7 @@ Electronic components (ESP32, Arduino Nano, sensors, LoRa modules), manual regis
 ### Users
 
 Who are the primary users?
+
 Engineering students (primary), lab in-charge (secondary/admin).
 
 ---
