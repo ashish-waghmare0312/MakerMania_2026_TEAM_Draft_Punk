@@ -44,21 +44,25 @@ Where did you conduct your observations?
 ### Activities
 
 What are users doing?
+
 Students borrowing components for practicals and projects, lab in-charge manually logging component usage, searching for missing or misplaced components.
 
 ### Environment
 
 What conditions affect them?
+
 College robotics/electronics lab with shared component storage, multiple students accessing the same rack, no formal tracking system in place.
 
 ### Interactions
 
 Who or what are they interacting with?
+
 Students interacting with the lab in-charge to request components, students using manual registers, lab in-charge managing returns and tracking usage.
 
 ### Objects
 
 What tools or products are used?
+
 Electronic components (ESP32, Arduino Nano, sensors, LoRa modules), manual registers, storage racks or boxes.
 
 ### Users
@@ -74,7 +78,7 @@ Engineering students (primary), lab in-charge (secondary/admin).
 | Observation | Evidence | Pain Point |
 | Students forget to return components after use | Components found missing during next session | Component loss and replacement cost |
 | Lab in-charge unaware of who took which component | No real-time tracking exists | Accountability gap |
-| Components mixed or misplaced across storage | Time wasted searching before practicals |            |
+| Components mixed or misplaced across storage | Time wasted searching before practicals | Inefficiency and lab disruption |
 
 ---
 
