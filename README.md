@@ -119,7 +119,7 @@ Number of users interviewed: ______
 
 ## Problem Statement
 
-User __________ needs a way to __________ because __________.
+User (engineering student) needs a way to borrow and return lab components with accountability because components frequently go missing, lab in-charges have no real-time tracking, and manual registers are unreliable.
 
 ---
 
