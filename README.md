@@ -43,33 +43,33 @@ Where did you conduct your observations?
 
 ### Activities
 
-What are users doing?
+Q. What are users doing?
 
-Students borrowing components for practicals and projects, lab in-charge manually logging component usage, searching for missing or misplaced components.
+- Students borrowing components for practicals and projects, lab in-charge manually logging component usage, searching for missing or misplaced components.
 
 ### Environment
 
-What conditions affect them?
+Q. What conditions affect them?
 
-College robotics/electronics lab with shared component storage, multiple students accessing the same rack, no formal tracking system in place.
+- College robotics/electronics lab with shared component storage, multiple students accessing the same rack, no formal tracking system in place.
 
 ### Interactions
 
-Who or what are they interacting with?
+Q. Who or what are they interacting with?
 
-Students interacting with the lab in-charge to request components, students using manual registers, lab in-charge managing returns and tracking usage.
+- Students interacting with the lab in-charge to request components, students using manual registers, lab in-charge managing returns and tracking usage.
 
 ### Objects
 
-What tools or products are used?
+Q. What tools or products are used?
 
-Electronic components (ESP32, Arduino Nano, sensors, LoRa modules), manual registers, storage racks or boxes.
+- Electronic components (ESP32, Arduino Nano, sensors, LoRa modules), manual registers, storage racks or boxes.
 
 ### Users
 
-Who are the primary users?
+Q. Who are the primary users?
 
-Engineering students (primary), lab in-charge (secondary/admin).
+- Engineering students (primary), lab in-charge (secondary/admin).
 
 ---
 
