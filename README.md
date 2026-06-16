@@ -101,7 +101,7 @@ Number of users interviewed: ______
 
 ## 3.3 User Persona
 
-#Persona 1
+## Persona 1
 
 ### Name
 Pranay Wani 
@@ -122,25 +122,25 @@ Students take components and don't return them properly, no reliable way to trac
 A mapping system for inventory counting and component tracking.
 
 
-#Persona 2
+## Persona 2
 
 ### Name
-Rajnarayan Hazra
+- Rajnarayan Hazra
 
 ### Age
-20
+- 20
 
 ### Occupation
-Student
+- Student
 
 ### Goals
-Build a culture where people are confident enough to pick up hardware and electronics projects and get into a flow state of building.
+- Build a culture where people are confident enough to pick up hardware and electronics projects and get into a flow state of building.
 
 ### Frustrations
-No accountability or proper component management, causing multiple people to repeatedly handle the same logistics tasks manually instead of it being automated.
+- No accountability or proper component management, causing multiple people to repeatedly handle the same logistics tasks manually instead of it being automated.
 
 ### Needs
-A system that handles inventory on its own and makes the entire component access process smooth and frictionless.
+- A system that handles inventory on its own and makes the entire component access process smooth and frictionless.
 
 ---
 
@@ -148,7 +148,7 @@ A system that handles inventory on its own and makes the entire component access
 
 ## Problem Statement
 
-User (engineering student) needs a way to borrow and return lab components with accountability because components frequently go missing, lab in-charges have no real-time tracking, and manual registers are unreliable.
+- User (engineering student) needs a way to borrow and return lab components with accountability because components frequently go missing, lab in-charges have no real-time tracking, and manual registers are unreliable.
 
 ---
 
