@@ -24,9 +24,9 @@
 
 | Name | Role | Skills |
 | ---- | ---- | ------ |
-|   Ashish Waghmare   |  Team Lead   |   ML & Software integrator, Media Editor, Writer     |
+|   Ashish Waghmare   |  Team Lead   |   ML & Software integrator, Media Editor, Writer, Documentation     |
 |  Aarush Srivatsava    |  Lead Ideator |   Electronics, Fusion, Hardware Integration    |
-|   Shekhar Epili   |   Lead Hardware Design | Hardware Design , Soldering, Laser Cad,     |
+|   Shekhar Epili   |   Lead Hardware Design | Hardware Design , Soldering, Laser Cad    |
 
 ---
 
