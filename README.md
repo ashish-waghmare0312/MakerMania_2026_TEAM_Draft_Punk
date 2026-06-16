@@ -101,7 +101,7 @@ Number of users interviewed: ______
 
 ## 3.3 User Persona
 
-**Persona 1**
+#Persona 1
 
 ### Name
 Pranay Wani 
@@ -121,9 +121,8 @@ Students take components and don't return them properly, no reliable way to trac
 ### Needs
 A mapping system for inventory counting and component tracking.
 
---
 
-**Persona 2**
+#Persona 2
 
 ### Name
 Rajnarayan Hazra
