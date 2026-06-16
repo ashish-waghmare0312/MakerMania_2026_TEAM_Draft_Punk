@@ -93,7 +93,7 @@ Number of users interviewed: ______
 
 1. "Component leke bhaag jaate hai, rakhte nahi hai barabar."
 
-2. "Itni ollege fee bharke bhi yehi milta hai."
+2. "Itni college fee bharke bhi yehi milta hai."
 
 3.
 
@@ -121,7 +121,6 @@ Students take components and don't return them properly, no reliable way to trac
 ### Needs
 A mapping system for inventory counting and component tracking.
 
----
 
 **Persona 2**
 
