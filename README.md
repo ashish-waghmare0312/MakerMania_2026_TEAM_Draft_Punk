@@ -93,7 +93,7 @@ Number of users interviewed: ______
 
 1. "Component leke bhaag jaate hai, rakhte nahi hai barabar."
 
-2.
+2. "Itni ollege fee bharke bhi yehi milta hai."
 
 3.
 
@@ -101,7 +101,7 @@ Number of users interviewed: ______
 
 ## 3.3 User Persona
 
-1. 
+**Persona 1**
 
 ### Name
 Pranay Wani 
@@ -113,13 +113,36 @@ Pranay Wani
 Lab Head/Incharge
 
 ### Goals
-Wants less people contributing towards projects than taking care of components.
+Wants more people contributing towards projects than taking care of components.
 
 ### Frustrations
 Students take components and don't return them properly, no reliable way to track inventory count.
 
 ### Needs
 A mapping system for inventory counting and component tracking.
+
+---
+
+**Persona 2**
+
+### Name
+Rajnarayan Hazra
+
+### Age
+20
+
+### Occupation
+Student
+
+### Goals
+Build a culture where people are confident enough to pick up hardware and electronics projects and get into a flow state of building.
+
+### Frustrations
+No accountability or proper component management, causing multiple people to repeatedly handle the same logistics tasks manually instead of it being automated.
+
+### Needs
+A system that handles inventory on its own and makes the entire component access process smooth and frictionless.
+
 ---
 
 # 4. Problem Framing
@@ -161,15 +184,19 @@ User (engineering student) needs a way to borrow and return lab components with 
 | Idea | Advantages | Challenges |
 | ---- | ---------- | ---------- |
 | Manual register with strict rules | No cost | Still unreliable, human error |
-|      |            |            |
-|      |            |            |
-
+| QR code-based digital log | Low cost, familiar | No physical access control |
+| RFID-based smart rack with locking boxes |  Automated, accountable, real-time | Higher build cost and complexity |
+ 
 
 ---
 
 ## Selected Concept
 
-Why was this concept chosen?
+- RFID-based smart rack
+
+Q. Why was this concept chosen?
+
+- The RFID-based smart rack was chosen because it combines authentication, physical access control, presence detection, and automated alerts in one system - replacing manual processes entirely while staying low-cost with ESP32.
 
 ---
 
@@ -177,7 +204,9 @@ Why was this concept chosen?
 
 ## High-Level Description
 
-Explain your solution.
+Q. Explain your solution.
+
+- A student scans their college RFID card, selects a component from the display menu, and the corresponding box unlocks via servo motor. An IR sensor detects component removal and starts a return timer. If the component isn't returned in time, the system triggers a buzzer, LED warning, and Wi-Fi-based alert to the lab in-charge.
 
 ---
 
@@ -185,17 +214,30 @@ Explain your solution.
 
 Insert diagram here.
 
+<img width="1448" height="1086" alt="image" src="https://github.com/user-attachments/assets/ec1c3927-d057-4ec5-9685-a98fbc891a81" />
+
+
 ---
 
 ## Inputs
 
-List sensors, user inputs, data sources.
+Q. List sensors, user inputs, data sources.
+
+-RFID card scan (student ID)
+-Button/encoder input for component selection
+-IR sensor / reed switch (component presence detection)
 
 ---
 
 ## Outputs
 
-List displays, actuators, software outputs.
+Q. List displays, actuators, software outputs.
+
+- OLED/LCD display (menu, student name, status)
+- Solenoid (box lock/unlock)
+- LED indicators (status per box)
+- Buzzer (alerts)
+- Wi-Fi notification (overdue alert)
 
 ---
 
@@ -205,8 +247,13 @@ List displays, actuators, software outputs.
 
 | Component | Purpose |
 | --------- | ------- |
-|           |         |
-|           |         |
+| ESP32 | Main controller, Wi-Fi connectivity |
+| RFID Reader (RC522) | Student authentication via college ID card |
+| Solenoid | Lock/unlock individual component boxes |
+| IR Sensors / Reed Switches | Detect component presence in each box |
+| OLED / LCD Display | Show menu, student info, status |
+| LEDs | Visual status indicators per box |
+| Buzzer | Audible alert for overdue/system feedback |
 
 ---
 
@@ -214,14 +261,18 @@ List displays, actuators, software outputs.
 
 | Tool | Purpose |
 | ---- | ------- |
-|      |         |
-|      |         |
+| Arduino IDE / PlatformIO | ESP32 firmware development |
+| MFRC522 Library | Sending overdue notifications |
+| SPIFFS / SD card | Local data storage for logs |
 
 ---
 
 ## Mechanical / CAD
 
-Describe fabricated components.
+Q. Describe fabricated components.
+
+- Four enclosed storage boxes with solenoid-controlled locks. Each box has a slot for the IR sensor. The rack holds all four boxes in a fixed grid layout (A1-A4).
+
 
 ---
 
@@ -272,11 +323,21 @@ Description:
 
 ## Existing Solutions
 
-List competing products.
+Q. List competing products.
+
+**Existing Solutions**
+
+- Manual lab registers
+- Basic barcode/QR scanning systems
+- Industrial smart cabinets (expensive, not student-accessible)
+
+
 
 ---
 
 ## What Makes This Different?
+
+Uses a student's existing college RFID ID card - no new hardware needed on the user side. Combines physical access control, sensor-based detection, and automatic overdue alerts in a single low-cost ESP32 system designed specifically for college labs.
 
 ---
 
@@ -302,31 +363,40 @@ Patents / Products Found:
 
 ## Novel Features
 
-1.
+1. RFID-authenticated physical box locking tied to a return timer
 
-2.
+2. Sensor-based real-time component presence detection per box
 
-3.
+3. Automated Wi-Fi overdue alert system for lab in-charge
 
 ---
 
 ## Provisional Patent Draft
 
 ### Title
+- Smart Accountable Lab Component Rack with RFID Authentication and Automated Return Tracking
 
 ### Abstract
+- An ESP32-based smart storage rack for electronics labs that uses RFID card authentication, servo-controlled box locking, presence detection sensors, and Wi-Fi alerts to automate the component issuing and return process.
 
 ### Problem
+- Lab components are frequently lost or not returned because there is no automated accountability system - only manual registers that are slow and error-prone.
 
 ### Solution
+- An RFID-authenticated rack with four smart boxes, each with servo locks and IR sensors, tracked by an ESP32 that logs issue/return times and sends overdue alerts over Wi-Fi.
 
 ### Claims
+
+1. RFID-based student authentication linked to component access control
+2. Per-box locking triggered only after authenticated component selection
+3. Sensor-driven return detection and time-based overdue alert system
 
 ---
 
 # 12. Business & Deployment
 
 ## Target Users
+- Engineering colleges, polytechnic institutes, IoT labs, robotics labs, maker spaces, and school science labs managing shared electronic components.
 
 ---
 
@@ -335,10 +405,12 @@ Patents / Products Found:
 ---
 
 ## Market Opportunity
+- Every technical college in India managing component inventory manually is a potential customer. Scalable from a single 4-box unit to a full lab rack.
 
 ---
 
 ## Sustainability Considerations
+- Reduces component replacement costs, lowers e-waste from lost/damaged modules, and shifts from paper-based registers to digital logs.
 
 ---
 
