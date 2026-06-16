@@ -104,22 +104,22 @@ Number of users interviewed: ______
 ## Persona 1
 
 ### Name
-Pranay Wani 
+- Pranay Wani 
 
 ### Age
-21
+- 21
 
 ### Occupation
-Lab Head/Incharge
+- Lab Head/Incharge
 
 ### Goals
-Wants more people contributing towards projects than taking care of components.
+- Wants more people contributing towards projects than taking care of components.
 
 ### Frustrations
-Students take components and don't return them properly, no reliable way to track inventory count.
+- Students take components and don't return them properly, no reliable way to track inventory count.
 
 ### Needs
-A mapping system for inventory counting and component tracking.
+- A mapping system for inventory counting and component tracking.
 
 ##
 
