@@ -91,7 +91,7 @@ Number of users interviewed: ______
 
 ## 3.2 Key Quotes
 
-1.
+1. "Component leke bhaag jaate hai, rakhte nahi hai barabar."
 
 2.
 
@@ -101,18 +101,25 @@ Number of users interviewed: ______
 
 ## 3.3 User Persona
 
+1. 
+
 ### Name
+Pranay Wani 
 
 ### Age
+21
 
 ### Occupation
+Lab Head/Incharge
 
 ### Goals
+Wants less people contributing towards projects than taking care of components.
 
 ### Frustrations
+Students take components and don't return them properly, no reliable way to track inventory count.
 
 ### Needs
-
+A mapping system for inventory counting and component tracking.
 ---
 
 # 4. Problem Framing
@@ -125,11 +132,12 @@ User (engineering student) needs a way to borrow and return lab components with 
 
 ## How Might We Questions
 
-1.
+1.How might we authenticate students quickly without adding friction to the component issuing process?
 
-2.
+2.How might we automatically track whether a component has been returned on time?
 
-3.
+3.How might we alert the lab in-charge before a component goes overdue?
+
 
 ---
 
@@ -152,8 +160,10 @@ User (engineering student) needs a way to borrow and return lab components with 
 
 | Idea | Advantages | Challenges |
 | ---- | ---------- | ---------- |
+| Manual register with strict rules | No cost | Still unreliable, human error |
 |      |            |            |
 |      |            |            |
+
 
 ---
 
