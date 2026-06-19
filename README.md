@@ -247,13 +247,35 @@ Q. List displays, actuators, software outputs.
 
 | Component | Purpose |
 | --------- | ------- |
-| ESP32 | Main controller, Wi-Fi connectivity |
-| RFID Reader (RC522) | Student authentication via college ID card |
-| Solenoid | Lock/unlock individual component boxes |
-| IR Sensors / Reed Switches | Detect component presence in each box |
-| OLED / LCD Display | Show menu, student info, status |
-| LEDs | Visual status indicators per box |
-| Buzzer | Audible alert for overdue/system feedback |
+| ESP32-S3  |Main controller, logic & Wi-Fi |
+| Barcode Scanner |Scan labels for component ID |
+| MDF Sheet | Main box/rack body structure |  
+| 2.8" SPI Touchscreen | UI for student info & status | 
+| 12V Solenoid | LockLock/unlock individual boxes |
+| Buzzer Module | Audible feedback and alerts | 
+| DS3231 RTC Module | Real-time issue deadline tracking |
+| Relay / MOSFET Driver | Drive solenoid locks safely |  
+| DC Jack Connector | 12V power input |
+| RFID Reader (RC522/PN532/EM18) | Student authentication via ID card |
+| 12V Power Adapter | Power supply for solenoid locks |
+| IR Sensor / Reed Switch | Detect component presence |
+| Green LED | Box ready / available status |
+| Red LED | Missing / overdue status |
+| 220 Ohm Resistor | Current limiting for LEDs |
+| 1N4007 Diode | Solenoid flyback protection |
+| USB OTG Cable | Connect scanner to ESP32 host |
+| MicroSD Module & Card | Local storage for logs & records |
+| Jumper Wires & Breadboard | Initial testing & connections |
+| Perfboard / Zero PCB | Final soldered circuit mounting |
+| Screw Terminal Blocks | Clean power & solenoid wiring |
+| On/Off Switch | Main power switch | 
+| Transparent Acrylic Sheet | Front doors/windows | 
+| Small Hinges | Door opening mechanism |
+| Screws, Nuts, L-Clamps | Mechanical assembly support |
+| Component Trays | Hold small components inside boxes |
+| Barcode Labels | Component ID tags |
+| Heat Shrink / Tape | Electrical insulation & safety |
+| Cable Ties | Wire management | 
 
 ---
 
