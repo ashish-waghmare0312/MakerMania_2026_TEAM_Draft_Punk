@@ -87,15 +87,13 @@ Q. Who are the primary users?
 
 ## 3.1 Interview Summary
 
-Number of users interviewed: ______
+Number of users interviewed: 2
 
 ## 3.2 Key Quotes
 
 1. "Component leke bhaag jaate hai, rakhte nahi hai barabar."
 
 2. "Itni college fee bharke bhi yehi milta hai."
-
-3.
 
 ---
 
