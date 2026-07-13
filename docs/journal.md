@@ -19,4 +19,4 @@ The drawers were then decided to be made out of [acrylic](https://github.com/ash
 We also had problems finding the accurate locking system, cycling through solenoid and servo options, while also trying out different microcontrollers such as Arduino Nano, MEGA, ESP32 etc.
 
 ### c. Finishing
-We finally ended up making our project using the required tools and we nwere able to run it.
+We finally ended up making our project using the required tools and we were able to run it.
