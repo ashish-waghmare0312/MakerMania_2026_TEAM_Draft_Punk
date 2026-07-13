@@ -11,4 +11,4 @@ After many and many attempts of rethinkinging, redesigns, reiterations, we final
 ## 3. The Making
 Now we finally come to the part of which the entire bootcamp is based on. Making the product. We started with desiging the shelves using the [layout.](https://github.com/ashish-waghmare0312/MakerMania_2026_TEAM_Draft_Punk/blob/main/images/Sensor%20Cupboard%20Layout.jpg)
 
-We started
+The drawers were then decided to be made out of acrylic, for transparency and better visibility of the componenets for a person accessing the inventory.
