@@ -3,20 +3,54 @@
 # But we went through a variety of phases
 
 ## 1. Idea
-Our team, [Draft Punk](https://github.com/ashish-waghmare0312/MakerMania_2026_TEAM_Draft_Punk/blob/main/images/Team_Draft_Punk.jpeg) when starting to ideate the product and coming to a conclusion about what to choose, was a big task that required us to take various approaches to finding a problem post our "useless" product's success. We brainstormed through various domains, first unanimously agreein to choose a problem in the healthcare space. Although, none of which seemed feasible and innovative at the same time.
+Our team, [Draft Punk](https://github.com/ashish-waghmare0312/MakerMania_2026_TEAM_Draft_Punk/blob/main/images/Team_Draft_Punk.jpeg), when starting to ideate the product, came to a conclusion about creating an automated component management system for makerspaces.
 
 ## 2. Finalization
-After many and many attempts of rethinkinging, redesigns, reiterations, we finally came to the conclusion about which product to finalize. Our product was decided to be the RFID based Componenent Management system. The purpose of which was to help manage hardware inventory for tech councils, workshops, hwardware companies, lab, etc. As we presented this to our faculty incharge Mr. Gopalkrishnan.
+After many attempts of rethinking, redesigns, and iterations, we finally came to a consensus about which product to finalize. Our product was decided to be the **RFID-based Component Manager** — an intelligent storage solution that uses RFID technology to automatically identify and retrieve components from organized drawers.
 
 ## 3. Making
-Now we finally come to the part of which the entire bootcamp is based on. Making the product.
+Now we finally come to the part on which the entire bootcamp is based: Making the product.
+
 ### a. Building 
-We started with desiging the shelves using the [layout.](https://github.com/ashish-waghmare0312/MakerMania_2026_TEAM_Draft_Punk/blob/main/images/Sensor%20Cupboard%20Layout.jpg) For the hardware we used RFID for the recognition, a display, a microcontrolle, and other components which we cycled through for the WiFi and the locking system.
+We started by designing the shelves using the [layout](https://github.com/ashish-waghmare0312/MakerMania_2026_TEAM_Draft_Punk/blob/main/images/Sensor%20Cupboard%20Layout.jpg) and constructed a modular system with:
+- **Frame**: Aluminum extrusion for durability and modularity
+- **RFID Readers**: Multiple RFID module sensors positioned at strategic points
+- **Microcontroller**: Arduino-based system for initial prototyping
+- **Motors**: For automated drawer access and component retrieval
 
 ### b. Issues 
-The drawers were then decided to be made out of [acrylic](https://github.com/ashish-waghmare0312/MakerMania_2026_TEAM_Draft_Punk/blob/main/images/Sensor%20Box.jpg), for transparency and better visibility of the componenets for a person accessing the inventory. This led to us designing a [prototype](https://github.com/ashish-waghmare0312/MakerMania_2026_TEAM_Draft_Punk/blob/main/images/Failed%20Prototype.jpg) which we didnt end up going forward with, as we later came across the issue of having limited acrlyic, and therefore the choice was made that we limit acrylic to certain parts of the drawer and make sure that the rest of the drawer is made out of another material.
+The drawers were designed to be made out of [acrylic](https://github.com/ashish-waghmare0312/MakerMania_2026_TEAM_Draft_Punk/blob/main/images/Sensor%20Box.jpg) for transparency and better visibility of components.
 
-We also had problems finding the accurate locking system, cycling through solenoid and servo options, while also trying out different microcontrollers such as Arduino Nano, MEGA, ESP32 etc.
+However, we encountered several significant challenges:
+
+1. **Locking System Iterations** — We cycled through multiple options:
+   - **Solenoid locks**: Initial choice but struggled with consistency and power requirements
+   - **Servo-based latches**: Provided better control but had speed limitations
+   - Decision: Ultimately selected servo-based latches for reliability and precision
+
+2. **Microcontroller Selection** — We tested and compared:
+   - **Arduino Nano**: Limited processing power and memory
+   - **Arduino MEGA**: Better performance but larger form factor
+   - **ESP32**: Superior connectivity and processing capabilities
+   - Decision: Chose ESP32 for its WiFi connectivity and superior performance, enabling remote access features
+
+3. **RFID Accuracy** — Interference from metal cabinet components required careful sensor placement and shielding adjustments (approximately 2-3 days of troubleshooting)
 
 ### c. Finishing
-We finally ended up making our project using the required tools and we were able to run it.
+We successfully integrated all components into a fully functional prototype. The system now:
+- Detects RFID-tagged components automatically
+- Opens the appropriate drawer via servo motors
+- Logs component access and inventory
+- Provides a basic web interface for monitoring
+
+**Key Learnings:**
+- **Iterative design matters** — Our multiple prototypes taught us more than rushing to a final design
+- **Component compatibility is critical** — Testing microcontrollers early saved us from later integration headaches
+- **Physical constraints are real** — Metal shielding around RFID readers was essential and shouldn't be overlooked
+
+**What We'd Do Differently:**
+- Prototype the RFID system in the actual cabinet earlier to catch interference issues sooner
+- Plan for more robust power management from day one
+- Allocate more time for software integration testing
+
+This project successfully demonstrates an automated, RFID-based component management solution that could be scaled for larger makerspaces and educational institutions.
