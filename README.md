@@ -245,8 +245,8 @@ Q. List displays, actuators, software outputs.
 
 | Component | Purpose |
 | --------- | ------- |
-| ESP32-S3  |Main controller, logic & Wi-Fi |
-| Barcode Scanner |Scan labels for component ID |
+| Arduino  |Main controller |
+| RFID Scanner |Scan labels for component ID |
 | MDF Sheet | Main box/rack body structure |  
 | 2.8" SPI Touchscreen | UI for student info & status | 
 | 12V Solenoid | LockLock/unlock individual boxes |
