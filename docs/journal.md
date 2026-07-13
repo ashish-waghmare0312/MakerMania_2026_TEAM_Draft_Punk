@@ -10,3 +10,4 @@
 
 ## 3. The Making
 ### Now we finally come to the part of which the entire bootcamp is based on. Making the product. We started with desiging the drawers,
+https://github.com/ashish-waghmare0312/MakerMania_2026_TEAM_Draft_Punk/blob/main/images/c6453891-9012-4168-ab28-587a8937ba52.jpg
